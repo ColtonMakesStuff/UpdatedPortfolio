@@ -1,0 +1,4 @@
+.full-width-navbar {
+    width: 100vw; /* Set width to 100% of viewport width */
+    margin-left: calc(-50vw + 50%); /* Center the Navbar horizontally */
+  }
