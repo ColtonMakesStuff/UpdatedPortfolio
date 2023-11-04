@@ -3,8 +3,6 @@
 	height: 1000px;
 }
 
-
-
 .animation {
   display: block;
 	position: relative;
@@ -13,34 +11,47 @@
 
 .animation_layer {
 	background-position: bottom center;
-	background-size: auto 1038px;
 	background-repeat: repeat-x;
 	width: 100%;
+	position: absolute;
 }
+
 .animation_layer.parallax {
 	position: fixed;
 }
 
 .sky {
     background-image: url('../assets/images/sky.png');
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .mountains {
     background-image: url('../assets/images/mountains.png');
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .trees {
     background-image: url('../assets/images/trees.png');
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .hills {
     background-image: url('../assets/images/hills.png');
-    background-repeat: no-repeat;
     background-size: cover;
 }
+
+.main {
+    position: absolute;
+    top: 1000px;
+}
+
+.parallax-container {
+    background-image: url('path/to/image.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .parallax-content {
+    transform: translateY(-50%);
+  }
+  

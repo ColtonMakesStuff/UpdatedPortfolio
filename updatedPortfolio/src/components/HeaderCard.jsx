@@ -5,10 +5,10 @@ import macbookImg from '../assets/images/macbook-img.png';
 
 const HeaderCard = () => {
   return (
-    <div className="row d-flex justify-content-center " style={{ marginTop: '10rem', maxHeight: '500px' }}>
+    <div className="row d-flex justify-content-center " style={{ marginTop: '5rem',  }}>
       <Container>
         <Row className="justify-content-center">
-          <Col  className="mt-5 col-lg-6 col-md-8 col-sm-9" style={{ maxWidth: '750px' }}>
+          <Col  className="mt-5 col-lg-6 col-md-8 col-sm-9" style={{ maxWidth: '750px', maxHeight: '4rem' }}>
             <Card className=" text-center card" style={{ backgroundColor: 'transparent', border: 'none'}}>
               <Card.Title style={{ fontWeight: 'bold', textShadow: '0 0 5px white', fontSize: '50px' }}>
                 ColtonMakesStuff
