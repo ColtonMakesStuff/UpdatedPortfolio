@@ -1,0 +1,9 @@
+.expand {
+    transition: height .5s ease-in-out; /* Add a transition for the height property */
+    height: auto; /* Set the initial height to auto */
+  }
+  
+  .expand.show {
+    height: 100%; /* Set the height to 100% when the container is expanded */
+  }
+  

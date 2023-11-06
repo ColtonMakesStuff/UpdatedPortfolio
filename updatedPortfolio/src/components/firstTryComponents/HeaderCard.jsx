@@ -5,7 +5,7 @@ import macbookImg from '../assets/images/macbook-img.png';
 
 const HeaderCard = () => {
   return (
-    <div className="row d-flex justify-content-center " style={{ marginTop: '5rem',  }}>
+    <div className="row d-flex justify-content-center " style={{ marginTop: '3rem',  }}>
       <Container>
         <Row className="justify-content-center">
           <Col  className="mt-5 col-lg-6 col-md-8 col-sm-9" style={{ maxWidth: '750px', maxHeight: '4rem' }}>

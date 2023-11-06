@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import FadeInSection from './FadeIn';
+import FadeInSection from '../FadeIn';
 import classes from './SpanBar.module.css';
 
 function SpanBar() {

@@ -21,7 +21,7 @@ function MyNav() {
   
     return (
       <>
-        {isSmallWindow ? 
+{isSmallWindow ? 
 <Navbar bg="dark" variant="dark"  className="justify-content-center align-items-center" style={{ width: '100vw' }}>
   <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
     <img src={logo} alt="" width="50" height="50" /> 
@@ -34,7 +34,6 @@ function MyNav() {
 </Navbar>
 :
 <Navbar bg="dark" variant="dark" >
-  <Container fluid>
     <Navbar.Brand href="#" style={{width: '300px'}}>
       <img src={logo} alt="" width="40" height="40" /> ColtonMakesStuff
     </Navbar.Brand>
@@ -46,7 +45,6 @@ function MyNav() {
     <div  style={{width: '340px', display:'flex',justifyContent:'right'}}>
     <Button variant="outline-success" className="ml-auto">Right Button</Button>
     </div>
-  </Container>
 </Navbar>  
 }  
     </>
