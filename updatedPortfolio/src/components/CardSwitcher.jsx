@@ -3,23 +3,6 @@ import { Container, Row, Col, Image, Card } from 'react-bootstrap';
 import placeholderPunkin from '../assets/images/placeholder-punkin.png';
 const CardSwitcher = () => {
 
-const [isSmallWindow, setIsSmallWindow] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 768) {
-        setIsSmallWindow(true);
-      } else {
-        setIsSmallWindow(false);
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
 
   const [data, setData] = useState([

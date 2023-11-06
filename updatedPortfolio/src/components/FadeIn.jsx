@@ -7,7 +7,7 @@ const FadeInSection = (props) => {
     const fadeAnimation = useSpring({
       opacity: isVisible ? 1 : 0,
       transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
-      config: { delay: 500 }, // 1/4 second delay
+      config: { delay: 1500 }, // 1/4 second delay
     });
   
     return (

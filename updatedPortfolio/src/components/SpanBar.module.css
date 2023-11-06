@@ -1,8 +1,5 @@
 .fuzzy_background {
     background-color: black; /* Set the background color with transparency */
-    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
-    border:10px solid transparent;
-    box-shadow: 0 0 10px 10px black;
-    margin: 1px;
+    margin: none;
   }
   
