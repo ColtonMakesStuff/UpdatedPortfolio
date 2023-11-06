@@ -18,18 +18,7 @@ function MyModal() {
       <Button onClick={handleOpenModal}>Open Modal</Button>
 
       <Modal show={showModal} onHide={handleCloseModal}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal Title</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>Modal content goes here.</p>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseModal}>
-            Close
-          </Button>
-          <Button variant="primary">Save</Button>
-        </Modal.Footer>
+    {/* <Modal.Dialog> */}
       </Modal>
     </div>
   );

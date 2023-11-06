@@ -8,6 +8,7 @@ import techData from '../assets/data/techData.js';
 import DividerHorizontal from './DividerHorizontal';
 import { Modal } from 'react-bootstrap';
 import MyModal from './MyModal';
+import ContactSection from './ContactSection';
 
 const LandingPage = () => {
   return (
@@ -24,6 +25,7 @@ const LandingPage = () => {
 <DividerHorizontal />
 <MainContentCard data={testcard} direction={'left'}/>
 <MyModal />
+<ContactSection />
 </div>
 </>
   );
