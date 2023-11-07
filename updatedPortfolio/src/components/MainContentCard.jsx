@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Card, Placeholder, Row, Col } from 'react-bootstrap';
+import { Card, Placeholder, Row, Col, Container } from 'react-bootstrap';
 
 const MainContentCard = ({ data, direction }) => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -37,8 +37,9 @@ const MainContentCard = ({ data, direction }) => {
       </Col>
     </Row>
   ) : direction === 'left' ? (
+    <Container style={{ justifyContent: 'center', maxWidth: '80vw'}}>
     <Row style={{ justifyContent: 'space-around' }}>
-            <Col sm={4} md={4} className="d-flex align-items-stretch" style={{margin:'12px'}}>
+            <Col sm={5} md={5} className="d-flex align-items-stretch" style={{margin:'12px'}}>
       <div className="d-flex flex-column justify-content-between h-100">
         <div>
           <h1>{data.title}</h1>
@@ -50,17 +51,18 @@ const MainContentCard = ({ data, direction }) => {
         </div>
       </div>
     </Col>
-    <Col sm={4} md={4}>
+    <Col sm={5} md={5}>
       <Card.Img variant="top" src={data.image} />
     </Col>
-
-  </Row>
+    </Row>
+  </Container>
   ) : (
-<Row style={{ justifyContent: 'space-around' }}>
-      <Col sm={4} md={4}>
+    <Container style={{ justifyContent: 'center', maxWidth: '80vw'}}>
+<Row style={{ justifyContent: 'space-around'}} >
+      <Col sm={5} md={5}>
         <Card.Img variant="top" src={data.image} />
       </Col>
-      <Col sm={4} md={4} className="d-flex align-items-stretch" style={{margin:'12px'}}>
+      <Col sm={5} md={5} className="d-flex align-items-stretch" style={{margin:'12px'}}>
         <div className="d-flex flex-column justify-content-between h-100" >
           <div>
             <h1>{data.title}</h1>
@@ -73,6 +75,7 @@ const MainContentCard = ({ data, direction }) => {
         </div>
       </Col>
     </Row>
+    </Container>
   );
 };
 

@@ -48,14 +48,14 @@ window.addEventListener('resize', resizeGrid);
   ));
 
   return (
-    <div >
+    <Container style={{maxWidth:'80vw', justifyContent:'center'}}>
       <Container style={{ justifyContent: 'center', animation: 'smooth' }} >
         <Row>
           {cardItems}
         </Row>
       </Container>
       <Button onClick={toggleExpand}>Toggle Expand</Button>
-    </div>
+    </Container>
   );
 };
 

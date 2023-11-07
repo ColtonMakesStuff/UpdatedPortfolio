@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const ContactSection = () => {
   return (
-    <Container className='justify-content-center' style={{ paddingTop:'29px' ,borderTop: '2px solid White'}}>
+    <Container className='justify-content-center' style={{ paddingTop:'29px' ,borderTop: '2px solid White', maxWidth:'75vw'}}>
       <Row>
         <Col>
           <h1>Get in touch</h1>

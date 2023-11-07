@@ -13,7 +13,7 @@ import ContactSection from './ContactSection';
 const LandingPage = () => {
   return (
 <>
-<div style={{backgroundColor:'grey'}}>
+<div style={{backgroundColor:'grey', color: 'white'}}>
 <CustomNavbar />
 <Header />
 <DividerHorizontal />
