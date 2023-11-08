@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-function MyModal() {
+function MyModal({content}) {
   const [showModal, setShowModal] = useState(false);
 
   const handleCloseModal = () => {
@@ -14,11 +14,12 @@ function MyModal() {
   };
 
   return (
-    <div>
+    <div >
       <Button onClick={handleOpenModal}>Open Modal</Button>
 
-      <Modal show={showModal} onHide={handleCloseModal}>
-    {/* <Modal.Dialog> */}
+      <Modal show={showModal} onHide={handleCloseModal} >
+        <div style={{backgroundColor:'grey', color:'white', border:'30px solid grey', borderRadius:'6px'}}> {content}</div>
+     
       </Modal>
     </div>
   );

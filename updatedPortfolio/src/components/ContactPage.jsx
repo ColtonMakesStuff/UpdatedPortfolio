@@ -15,16 +15,7 @@ const LandingPage = () => {
   return (
 <>
 <div style={{backgroundColor:'grey', color: 'white'}}>
-<Header />
 <DividerHorizontal />
-<MainContentCard data={testcard} direction={'right'}/>
-<DividerHorizontal />
-<MainContentCard data={testcard} direction={'left'}/>
-<DividerHorizontal />
-<Grid data={techData}/>
-<DividerHorizontal />
-<MainContentCard data={testcard} direction={'left'}/>
-<MyModal content={<EmailForm/>}/>
 <EmailForm />
 <ContactSection />
 </div>
