@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Form, Button, Row } from 'react-bootstrap';
 import Col from 'react-bootstrap/Col';
 import { PaperPlaneTilt } from "@phosphor-icons/react";
+import classes from './EmailForm.module.css';
 
 function EmailForm() {
   const handleEmailClick = () => {
@@ -34,7 +35,7 @@ function EmailForm() {
 
   return (
   <Row className='justify-content-center'> 
-    <Form onSubmit={handleFormSubmit} style={{width:'70vw'}}>
+    <Form style={{width:'70vw'}}>
       <Form.Group controlId="formSubject">
         <Form.Label>Subject</Form.Label>
         <Form.Control
@@ -78,11 +79,11 @@ function EmailForm() {
         />
       </Form.Group>
       <Row>
-        <Col sm={9}><h5 style={{marginTop:'15px', marginBottom:'15px'}}>Open Pre-written Email in Your Default Mail App</h5></Col>
-      <Col className='d-flex align-items-stretch'>
-      <Button style={{backgroundColor:'transparent', border:'none'}} variant="primary" type="submit">
-          <PaperPlaneTilt size={32} />
-      </Button>
+        <Col sm={9}><h5 style={{marginTop:'20px', marginBottom:'15px'}}>Open Pre-written Email in Your Default Mail App</h5></Col>
+      <Col className='d-flex align-items-center justify-content-end'>
+      <div className={classes.email_button} onClick={handleFormSubmit}>
+          <PaperPlaneTilt size={32} color='white' />
+      </div>
       </Col>
       </Row>
     </Form>

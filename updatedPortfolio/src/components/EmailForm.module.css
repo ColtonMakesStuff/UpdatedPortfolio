@@ -1,0 +1,27 @@
+.email_button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 12px;
+    margin: 6px;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .email_button:hover {
+    background-color: rgb(162, 143, 172);
+    border: 2px solid white;
+    border-radius: 12px;
+    margin: 6px;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .email_button:active {
+    background-color: rgb(103, 85, 113);
+    border: 2px solid white;
+    border-radius: 12px;
+    margin: 7px;
+    padding: 4px;
+    transition: background-color 0.3s ease;
+  }
+  

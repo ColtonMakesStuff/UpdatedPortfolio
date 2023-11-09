@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import FadeInSection from './FadeIn';
 import { to } from '@react-spring/web';
+import { ArrowDown } from "@phosphor-icons/react";
+import { ArrowUp } from "@phosphor-icons/react";
+
+import classes from './Grid.module.css'
 
 const Grid = (props) => {
   const [isExpanded, setIsExpanded] = useState(false); // State variable for expand/collapse
@@ -48,13 +52,27 @@ window.addEventListener('resize', resizeGrid);
   ));
 
   return (
-    <Container style={{maxWidth:'80vw', justifyContent:'center'}}>
-      <Container style={{ justifyContent: 'center', animation: 'smooth' }} >
+    <Container style={{maxWidth:'80vw', justifyContent:'center', transition:'height 0.7s ease'}}>
+    <Col  >
+    
         <Row>
           {cardItems}
         </Row>
-      </Container>
-      <Button onClick={toggleExpand}>Toggle Expand</Button>
+        {isExpanded ?  
+    <Row sm={4} className='d-flex justify-content-center '>
+      <div className={classes.my_button} onClick={toggleExpand}>
+        <ArrowUp size={32} />
+      </div>
+     </Row>
+     :
+    <Row sm={4} className='d-flex justify-content-center '>
+      <div className={classes.my_button} onClick={toggleExpand}>
+        <ArrowDown size={32} />
+        </div>
+    </Row>}
+     
+     
+    </Col>
     </Container>
   );
 };

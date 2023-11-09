@@ -7,6 +7,7 @@ import LandingPage from './components/LandingPage';
 import ContactPage from './components/ContactPage';
 import CustomNavbar from './components/CustomNavbar';
 import ProjectsPage from './components/ProjectsPage';
+// import reactRouter from 'react-router-dom';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
        </Row>
        <Navbar.Collapse id="navbar-nav">
          <Nav className="me-auto">
-           <Nav.Link href="#">Contact</Nav.Link>
+           <Nav.Link href="/Contact">Contact</Nav.Link>
            <Nav.Link href="#">Projects</Nav.Link>
            <Nav.Link href="#">About Me</Nav.Link>
          </Nav>
@@ -38,13 +39,13 @@ function App() {
    </Navbar>
       
     {/* should be /home */}
-      {/* <LandingPage /> */}
+      <LandingPage />
       
     {/* should be /contact */}
      {/* <ContactPage/> */}
 
     {/* should be /projects */}
-     <ProjectsPage/>
+     {/* <ProjectsPage/> */}
     </>
   );
 }
