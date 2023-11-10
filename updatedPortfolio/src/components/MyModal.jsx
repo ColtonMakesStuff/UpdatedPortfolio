@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-function MyModal({content}) {
+function MyModal({content, modalHandeler}) {
   const [showModal, setShowModal] = useState(false);
 
   const handleCloseModal = () => {
@@ -15,7 +15,7 @@ function MyModal({content}) {
 
   return (
     <div >
-      <Button onClick={handleOpenModal}>Open Modal</Button>
+      <div onClick={handleOpenModal}>{modalHandeler}</div>
 
       <Modal show={showModal} onHide={handleCloseModal} >
         <div style={{backgroundColor:'grey', color:'white', border:'30px solid grey', borderRadius:'6px'}}> {content}</div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Container, Row, Col, Button } from 'react-bootstrap';
 import logo from '../assets/images/logo.png';
+import { Link } from 'react-router-dom';
 
 const CustomNavbar = () => {
   return (
@@ -8,21 +9,22 @@ const CustomNavbar = () => {
       <Navbar bg="dark" expand="lg" variant="dark">
        
           <Row className="d-flex justify-content-between">
-            <Col>
-              <Navbar.Brand href="#">
+            <Col><Link to="/" className="nav-link">
+              <Navbar.Brand >
                 <img src={logo} alt="Logo" style={{ maxWidth: '30px', maxHeight: '30px', margin:'5px' }} />
                 ColtonMakesStuff
               </Navbar.Brand>
+              </Link>
             </Col>
             <Col className="text-end">
               <Navbar.Toggle aria-controls="navbar-nav" />
             </Col>
           </Row>
-          <Navbar.Collapse id="navbar-nav">
+          <Navbar.Collapse id="navbar-nav" style={{marginLeft:'4rem'}}>
             <Nav className="me-auto">
-              <Nav.Link href="#">Contact</Nav.Link>
-              <Nav.Link href="#">Projects</Nav.Link>
-              <Nav.Link href="#">About Me</Nav.Link>
+            <Link to="/contact" className="nav-link">Contact</Link>
+            <Link to="/projects" className="nav-link">Projects</Link>
+            <Link to="/about" className="nav-link">About Me</Link>
             </Nav>
             <Button variant="outline-light" href="/path/to/resume.pdf" download>
               Download Resume

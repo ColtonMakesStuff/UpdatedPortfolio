@@ -5,39 +5,34 @@ import EmailForm from './EmailForm';
 import { Row } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
-
-
+import CustomNavbar from './CustomNavbar';
+import logo from '../assets/images/logo.png';
+import ContactSectionLinks from './ContactSectionLinks';
 const LandingPage = () => {
   return (
 <>
 <Row style={{backgroundColor:'grey', color: 'white', justifyContent: 'center'}}>
-<Row style={{ justifyContent: 'center' }}>
-          <Col className='text-center' style={{marginTop: '30px'}}>
-            <h1>Get in touch</h1>
+<CustomNavbar />
+<Row style={{ justifyContent: 'center', marginBottom:'45px'}} >
+   
+          <Col  sm={8} className='text-center justify-content-center' style={{marginTop: '30px'}}> 
+          <img src={logo}  style={{maxHeight:'150px', maxWidth:'150px'}} alt="" />
+          <h1>ColtonMakesStuff</h1>
+          <DividerHorizontal />
+            <h2 style={{marginTop:'30px'}}>Get in touch</h2>
+            <Row ><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolor ea error! Earum nihil, laborum tenetur laudantium quidem molestias cumque delectus! Repellendus neque sunt eligendi deleniti, cupiditate sed unde ducimus consequatur. Commodi consectetur, inventore vero ab enim tenetur aperiam impedit asperiores, aliquid placeat aspernatur velit iure porro unde eaque non fugit ex nisi assumenda nostrum, temporibus vitae? Reprehenderit est tempore sunt quis, laborum eos fuga voluptates?</p></Row>
+          <DividerHorizontal />
+
           </Col>
         </Row>
         <Row>
-            
+
         </Row>
-<DividerHorizontal />
 <EmailForm />
 <Container className='justify-content-center' style={{ paddingTop:'29px' , maxWidth:'75vw'}}>
-  
-   
-      <Row className='justify-content-between text-align-center ' style={{textAlign: 'center', marginTop:'20px', borderTop:'2px solid white'}}>
-        <Col style={{paddingTop:'20px', paddingBottom:'20px'}}>
-          <h1>Linkedin</h1>
-          {/* Content for the third row, first column */}
-        </Col >
-        <Col  style={{paddingTop:'20px', paddingBottom:'20px', borderLeft:'2px solid white'}} >
-          <h1>GitHub</h1>
-          {/* Content for the third row, second column */}
-        </Col>
-        <Col style={{paddingTop:'20px', paddingBottom:'20px', borderLeft:'2px solid white'}}>
-          <h1>Indeed</h1>
-          {/* Content for the third row, third column */}
-        </Col>
-      </Row>
+ <Row style={{borderTop:'2px solid White'}}> 
+ <ContactSectionLinks/>
+ </Row>
     </Container>
 </Row>
 </>

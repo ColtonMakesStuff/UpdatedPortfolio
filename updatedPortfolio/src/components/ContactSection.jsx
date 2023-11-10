@@ -1,32 +1,27 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import MyModal from './MyModal';
+import EmailForm from './EmailForm';
+import classes from './ContactSection.module.css';
+import ContactSectionLinks from './ContactSectionLinks';
 
 const ContactSection = () => {
   return (
-    <Container className='justify-content-center' style={{ paddingTop:'29px' ,borderTop: '2px solid White', maxWidth:'75vw'}}>
-      <Row>
+    <Container className='justify-content-center' style={{ paddingTop:'29px' , maxWidth:'75vw'}}>
+        <MyModal content={<EmailForm/>} modalHandeler={
+       <Row className={`${classes.hover} ${classes.email_bar}`}>
         <Col>
           <h1>Get in touch</h1>
           {/* Content for the first row */}
           <h2>coltonmakesstuff@gmail.com</h2>
           {/* Content for the first row */}
         </Col>
-      </Row>
+        </Row>
+        // <p className={`${toggle}`}></p>
+        }/>
    
-      <Row className='justify-content-between text-align-center ' style={{textAlign: 'center', marginTop:'20px', borderTop:'2px solid white'}}>
-        <Col style={{paddingTop:'20px', paddingBottom:'20px'}}>
-          <h1>Linkedin</h1>
-          {/* Content for the third row, first column */}
-        </Col >
-        <Col  style={{paddingTop:'20px', paddingBottom:'20px', borderLeft:'2px solid white'}} >
-          <h1>GitHub</h1>
-          {/* Content for the third row, second column */}
-        </Col>
-        <Col style={{paddingTop:'20px', paddingBottom:'20px', borderLeft:'2px solid white'}}>
-          <h1>Indeed</h1>
-          {/* Content for the third row, third column */}
-        </Col>
-      </Row>
+   
+      <ContactSectionLinks/>
     </Container>
   );
 };

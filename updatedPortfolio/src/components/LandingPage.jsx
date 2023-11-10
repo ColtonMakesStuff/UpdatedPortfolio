@@ -15,6 +15,7 @@ const LandingPage = () => {
   return (
 <>
 <div style={{backgroundColor:'grey', color: 'white'}}>
+<CustomNavbar />
 <Header />
 <DividerHorizontal />
 <MainContentCard data={testcard} direction={'right'}/>
@@ -24,10 +25,10 @@ const LandingPage = () => {
 <Grid data={techData}/>
 <DividerHorizontal />
 <MainContentCard data={testcard} direction={'left'}/>
-<DividerHorizontal />
-<MyModal content={<EmailForm/>}/>
-<EmailForm />
-<ContactSection />
+
+
+ <ContactSection />
+
 </div>
 </>
   );

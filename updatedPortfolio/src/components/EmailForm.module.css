@@ -1,9 +1,11 @@
 .email_button {
+    justify-content: center;
+    text-align: center;
     background-color: transparent;
     border: 2px solid white;
+    padding-top: 8px;
+    margin-bottom: 20px;
     border-radius: 12px;
-    margin: 6px;
-    padding: 5px;
     transition: background-color 0.3s ease;
   }
   
@@ -11,8 +13,7 @@
     background-color: rgb(162, 143, 172);
     border: 2px solid white;
     border-radius: 12px;
-    margin: 6px;
-    padding: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
@@ -20,8 +21,23 @@
     background-color: rgb(103, 85, 113);
     border: 2px solid white;
     border-radius: 12px;
-    margin: 7px;
-    padding: 4px;
+
     transition: background-color 0.3s ease;
   }
   
+  .check_box_button:hover {
+    background-color: rgb(162, 143, 172);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+  }
+
+    .check_box_button:active {
+        background-color: rgb(103, 85, 113);
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    .hover_cursor_pointer:hover {
+        cursor: pointer;
+    }

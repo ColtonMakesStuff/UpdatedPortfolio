@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button, Row } from 'react-bootstrap';
 import Col from 'react-bootstrap/Col';
-import { PaperPlaneTilt } from "@phosphor-icons/react";
+import { PaperPlaneTilt, Square, CheckSquare  } from "@phosphor-icons/react";
 import classes from './EmailForm.module.css';
 
 function EmailForm() {
@@ -11,15 +11,28 @@ function EmailForm() {
     const body = encodeURIComponent(`${message}`);
     const contactInformation = encodeURIComponent(`${contactInfo}`);
     const ccInput = encodeURIComponent(`${cc}`);
-    // Construct the email link with the subject and body input data
-    const mailtoLink = `mailto:${email}?subject=${subjectInput}&body=${body}%0D%0A%0D%0A${contactInformation}&cc=${ccInput}`;
+     // Construct the email link with the subject and body input data
+     let mailtoLink = '';
 
-    window.location.href = mailtoLink;
+     // Set the email client protocol to open Gmail
+     emailClient.clientName === 'gmail' ?
+       mailtoLink = `https://mail.google.com/mail/?view=cm&to=${email}&cc=${ccInput}&subject=${subjectInput}&body=${body}%0D%0A${contactInformation}` :
+       mailtoLink = `mailto:${email}?subject=${subjectInput}&body=${body}%0D%0A${contactInformation}&cc=${ccInput}`;
+     
+      const test = "https://mail.google.com/mail/?view=cm&to=email@example.com&cc=cc@example.com&bcc=bcc@example.com&subject=test%20Line&body=Body%20Text"
+
+
+  // Open the mailto link in a new tab or window
+   window.open(mailtoLink);
+  console.log(mailtoLink)
   };
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [contactInfo, setContactInfo] = useState('');
   const [cc, setCc] = useState('');
+  const [emailClient, setEmailClient] = useState({ client: '', clientName: '' });
+
+
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -32,6 +45,15 @@ function EmailForm() {
     setContactInfo('');
     setCc('');
   };
+
+const handleGoogleClient = () => {
+  setEmailClient({ client: 'https://mail.google.com/mail/?extsrc=mailto&url=', clientName: 'gmail' });
+  console.log('hi im gmail')
+}
+const handleDefaultClient = () => {
+  setEmailClient({ client: '', clientName: 'default' });
+  console.log(emailClient.clientName)
+}
 
   return (
   <Row className='justify-content-center'> 
@@ -78,13 +100,38 @@ function EmailForm() {
           onChange={(e) => setContactInfo(e.target.value)}
         />
       </Form.Group>
-      <Row>
-        <Col sm={9}><h5 style={{marginTop:'20px', marginBottom:'15px'}}>Open Pre-written Email in Your Default Mail App</h5></Col>
-      <Col className='d-flex align-items-center justify-content-end'>
-      <div className={classes.email_button} onClick={handleFormSubmit}>
-          <PaperPlaneTilt size={32} color='white' />
+      <Row className='d-flex justify-content-center' style={{marginTop:'20px'}}>
+       
+<Col className='d-flex align-items-center justify-content-left'>
+      <div  onClick={handleGoogleClient} >
+              <p className= {classes.hover_cursor_pointer}>  Use Gmail{" "}
+        {emailClient.clientName === 'gmail' ? (
+          <CheckSquare size={40} className={classes.check_box_button} />
+        ) : (
+          <Square size={40} className={classes.check_box_button} color="white" />
+        )}</p> 
       </div>
-      </Col>
+</Col>
+      
+<Col className='d-flex align-items-center justify-content-end'>
+          <div  onClick={handleDefaultClient}>
+                <p className= {classes.hover_cursor_pointer} >Default Mail App{" "}
+            {emailClient.clientName ==='gmail' ? (
+              <Square size={40} className={classes.check_box_button} />
+            ) : (
+              <CheckSquare size={40} className={classes.check_box_button} color="white" />
+            )}</p> 
+          </div>
+</Col>
+      </Row>
+      <Row>
+   
+      <Row   className='justify-content-center'>   
+          <Col className={classes.email_button} style={{maxWidth:'300px', display:'flex', justifyContent:'space-between'}} onClick={handleFormSubmit}><h5> Open with {emailClient.clientName ==='gmail' ? 'google mail' : 'default Mail App'}</h5> <PaperPlaneTilt size={25} color='white' /></Col>
+      </Row>
+     
+        <Col ></Col>
+      
       </Row>
     </Form>
     </Row> 
