@@ -2,6 +2,8 @@ import React from 'react';
 import { Navbar, Nav, Container, Row, Col, Button } from 'react-bootstrap';
 import logo from '../assets/images/logo.png';
 import { Link } from 'react-router-dom';
+import MyModal from './MyModal';
+import Resume from './Resume';
 
 const CustomNavbar = () => {
   return (
@@ -26,9 +28,10 @@ const CustomNavbar = () => {
             <Link to="/projects" className="nav-link">Projects</Link>
             <Link to="/about" className="nav-link">About Me</Link>
             </Nav>
-            <Button variant="outline-light" href="/path/to/resume.pdf" download>
+            <MyModal  content={<Resume/>} modalHandeler={<Button variant="outline-light" >
               Download Resume
-            </Button>
+            </Button>} style={{minWidth:'85vw', minHeight:'90vh'}}/>
+            
           </Navbar.Collapse>
        
       </Navbar>
