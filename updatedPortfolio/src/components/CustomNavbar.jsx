@@ -3,9 +3,10 @@ import { Navbar, Nav, Container, Row, Col, Button } from 'react-bootstrap';
 import logo from '../assets/images/logo.png';
 import { Link } from 'react-router-dom';
 import MyModal from './MyModal';
-import Resume from './Resume';
+import Resume from './SkillSetComponents/Resume';
 
 const CustomNavbar = () => {
+
   return (
     <>
       <Navbar bg="dark" expand="lg" variant="dark">
@@ -26,11 +27,12 @@ const CustomNavbar = () => {
             <Nav className="me-auto">
             <Link to="/contact" className="nav-link">Contact</Link>
             <Link to="/projects" className="nav-link">Projects</Link>
+            <Link to="/skillset" className="nav-link">Skill Set</Link>
             <Link to="/about" className="nav-link">About Me</Link>
             </Nav>
             <MyModal  content={<Resume/>} modalHandeler={<Button variant="outline-light" >
               Download Resume
-            </Button>} style={{minWidth:'85vw', minHeight:'90vh'}}/>
+            </Button>} />
             
           </Navbar.Collapse>
        

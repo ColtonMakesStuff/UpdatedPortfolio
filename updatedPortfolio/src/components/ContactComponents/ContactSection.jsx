@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import MyModal from './MyModal';
-import EmailForm from './EmailForm';
+import MyModal from '../MyModal';
+import EmailForm from '../EmailComponents/EmailForm';
 import classes from './ContactSection.module.css';
 import ContactSectionLinks from './ContactSectionLinks';
 

@@ -1,17 +1,17 @@
 import React from 'react';
-import DividerHorizontal from './DividerHorizontal';
-import ContactSection from './ContactSection';
-import EmailForm from './EmailForm';
+import DividerHorizontal from '../VisualEffectsComponents/DividerHorizontal';
+import ContactSection from '../ContactComponents/ContactSection';
+import EmailForm from '../EmailComponents/EmailForm';
 import { Row } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
-import CustomNavbar from './CustomNavbar';
-import logo from '../assets/images/logo.png';
-import ContactSectionLinks from './ContactSectionLinks';
+import CustomNavbar from '../CustomNavbar';
+import logo from '../../assets/images/logo.png';
+import ContactSectionLinks from '../ContactComponents/ContactSectionLinks';
 const LandingPage = () => {
   return (
 <>
-<Row style={{backgroundColor:'grey', color: 'white', justifyContent: 'center'}}>
+<div style={{backgroundColor:'grey', color: 'white'}}>
 <CustomNavbar />
 <Row style={{ justifyContent: 'center', marginBottom:'45px'}} >
    
@@ -34,7 +34,7 @@ const LandingPage = () => {
  <ContactSectionLinks/>
  </Row>
     </Container>
-</Row>
+</div>
 </>
   );
 };

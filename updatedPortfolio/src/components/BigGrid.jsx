@@ -7,45 +7,32 @@ import { ArrowUp } from "@phosphor-icons/react";
 
 import classes from './Grid.module.css'
 
-const Grid = (props) => {
-  const [isExpanded, setIsExpanded] = useState(false); // State variable for expand/collapse
+const BigGrid = (props) => {
   const [isSmallWindow, setIsSmallWindow] = useState(false);
-
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded); // Toggle the state variable
-  };
 
   useEffect(() => {
     const handleWindowResize = () => {
       setIsSmallWindow(window.innerWidth < 850); // Set the condition for small window size
         // Set isExpanded based on window size
     };
-
-
     window.addEventListener('resize', handleWindowResize);
     return () => {
      
-      console.log(isExpanded, isSmallWindow)
       window.removeEventListener('resize', handleWindowResize);
     };
   }, []);
 
 
-  const resizeGrid = () => {window.innerWidth < 850 ? setIsExpanded(false) : setIsExpanded(true);}
-  
-window.addEventListener('resize', resizeGrid);
-
   const data = props.data;
-  const numItemsToShow = isExpanded ? data.length : 4;
+
+  const numItemsToShow = data.length;
 
   const cardItems = data.slice(0, numItemsToShow).map((item, index) => (
-    <Col key={index} xs={6} md={4} lg={3}>
+    <Col key={index} xs={4} md={3} lg={2}>
       <FadeInSection>
-        <Card style={{ margin: '2rem' }}>
-          <Card.Img variant="top" src={item.image} />
-          <Card.Body>
-            <Card.Title style={{ textAlign: 'center' }}>{item.label}</Card.Title>
-          </Card.Body>
+        <Card style={{  margin: '1rem', width:'100px', backgroundColor:'transparent', border: 'none'}}>
+          <Card.Img variant="top" src={item.image} style={{width:'100px', height:'100px', margin:'none'}}/>
+            <p style={{textAlign:'center', height:'20px'}} >{item.label}</p>
         </Card>
       </FadeInSection>
     </Col>
@@ -58,21 +45,10 @@ window.addEventListener('resize', resizeGrid);
         <Row>
           {cardItems}
         </Row>
-        {isExpanded ?  
-    <Row sm={4} className='d-flex justify-content-center '>
-      <div className={classes.my_button} onClick={toggleExpand}>
-        <ArrowUp size={32} />
-      </div>
-     </Row>
-     :
-    <Row sm={4} className='d-flex justify-content-center '>
-      <div className={classes.my_button} onClick={toggleExpand}>
-        <ArrowDown size={32} />
-        </div>
-    </Row>}
+
     </Col>
     </Container>
   );
 };
 
-export default Grid;
+export default BigGrid;
