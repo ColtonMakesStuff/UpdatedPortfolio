@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import MainContentCard from '../MainContentCard';
-import testcard from '../../assets/data/testcard.js';
+import projectCards from '../../assets/data/projectCards.js';
 import DividerHorizontal from '../VisualEffectsComponents/DividerHorizontal';
 import CustomNavbar from '../CustomNavbar';
 import ContactSection from '../ContactComponents/ContactSection';
@@ -12,19 +12,18 @@ function ProjectsPage() {
     <CustomNavbar />
      <Row style={{ justifyContent: 'center' }}>
     <h1 style={{textAlign:'center'}}>Projects</h1>
-    <MainContentCard data={testcard} direction={'left'}/>
+    <MainContentCard data={projectCards[1]} direction={'left'}/>
     <DividerHorizontal />
-    <MainContentCard data={testcard} direction={'left'}/>
+    <MainContentCard data={projectCards[0]} direction={'left'}/>
     <DividerHorizontal />
-    <MainContentCard data={testcard} direction={'left'}/>
+    <MainContentCard data={projectCards[2]} direction={'left'}/>
     <DividerHorizontal />
-    <MainContentCard data={testcard} direction={'left'}/>
+    <MainContentCard data={projectCards[3]} direction={'left'}/>
     <DividerHorizontal />
-    <MainContentCard data={testcard} direction={'left'}/>
+    <MainContentCard data={projectCards[4]} direction={'left'}/>
     <DividerHorizontal />
-    <MainContentCard data={testcard} direction={'left'}/>
-    <DividerHorizontal />
-    <MainContentCard data={testcard} direction={'left'}/>
+    <MainContentCard data={projectCards[5]} direction={'left'}/>
+   
     </Row>
     <ContactSection />
     </div>

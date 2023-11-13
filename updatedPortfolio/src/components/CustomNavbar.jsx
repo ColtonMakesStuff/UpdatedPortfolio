@@ -4,7 +4,8 @@ import logo from '../assets/images/logo.png';
 import { Link } from 'react-router-dom';
 import MyModal from './MyModal';
 import Resume from './SkillSetComponents/Resume';
-
+import DocPreview from './SkillSetComponents/DocPreview';
+import HorizontalDivider from './VisualEffectsComponents/DividerHorizontal';
 const CustomNavbar = () => {
 
   return (
@@ -30,9 +31,10 @@ const CustomNavbar = () => {
             <Link to="/skillset" className="nav-link">Skill Set</Link>
             <Link to="/about" className="nav-link">About Me</Link>
             </Nav>
-            <MyModal  content={<Resume/>} modalHandeler={<Button variant="outline-light" >
-              Download Resume
-            </Button>} />
+            <Button variant="outline-light" size="lg" href="/path/to/resume.pdf" download>
+                            Download Resume
+            </Button>
+                
             
           </Navbar.Collapse>
        

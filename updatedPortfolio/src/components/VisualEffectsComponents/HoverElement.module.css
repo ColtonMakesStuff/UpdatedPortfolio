@@ -1,0 +1,23 @@
+.hover_element{
+
+    position: absolute;
+    top: 0%;
+    left: -60%;
+    width: 180%;
+    margin-left: 5%;
+    transform: translate(-50%, -50%);
+    background-color: grey;
+    border: 2px solid white;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    
+
+}
+.down_caret{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-55%, -85%);
+    margin: 0;
+}

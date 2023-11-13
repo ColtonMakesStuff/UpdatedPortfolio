@@ -1,8 +1,8 @@
-import React from 'react';
+
 import CustomNavbar from '../CustomNavbar';
 import Header from '../Header';
 import MainContentCard from '../MainContentCard';
-import testcard from '../../assets/data/testcard.js';
+import projectCards from '../../assets/data/projectCards.js';
 import Grid from '../Grid';
 import techData from '../../assets/data/techData.js';
 import DividerHorizontal from '../VisualEffectsComponents/DividerHorizontal';
@@ -18,13 +18,13 @@ const LandingPage = () => {
 <CustomNavbar />
 <Header />
 <DividerHorizontal />
-<MainContentCard data={testcard} direction={'right'}/>
+<MainContentCard data={projectCards[0]} direction={'right'}/>
 <DividerHorizontal />
-<MainContentCard data={testcard} direction={'left'}/>
+<MainContentCard data={projectCards[1]} direction={'left'}/>
 <DividerHorizontal />
 <Grid data={techData}/>
 <DividerHorizontal />
-<MainContentCard data={testcard} direction={'left'}/>
+{/* <MainContentCard data={null} direction={'left'}/> */}
 
 
  <ContactSection />

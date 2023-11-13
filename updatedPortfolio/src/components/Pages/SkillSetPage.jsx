@@ -2,7 +2,7 @@
 import React from 'react'
 import { Row } from 'react-bootstrap'
 import MainContentCard from '../MainContentCard'
-import testcard from '../../assets/data/testcard.js'
+import projectCards from '../../assets/data/projectCards.js'
 import DividerHorizontal from '../VisualEffectsComponents/DividerHorizontal'
 import CustomNavbar from '../CustomNavbar'
 import ContactSection from '../ContactComponents/ContactSection'
@@ -16,13 +16,13 @@ const SkillSetPage = () => {
          
             <div style={{backgroundColor:'grey', color: 'white'}}>
             <CustomNavbar />
-            <h1 style={{textAlign:'center'}}>Skill Set</h1>
+            <h1 style={{textAlign:'center', marginTop:'40px'}}>The Details</h1>
              <Row style={{ justifyContent: 'center' }}>
             <DividerHorizontal />      
             <DocPreview /> 
             <DividerHorizontal />      
 
-            <MainContentCard data={testcard} direction={'left'}/>
+            <MainContentCard data={projectCards[1]} direction={'left'}/>
             <DividerHorizontal />
             <BigGrid data={techData} />
             </Row>
