@@ -1,8 +1,8 @@
 .hover_element{
 
     position: absolute;
-    top: 0%;
-    left: -60%;
+    top: -50%;
+    left: -55%;
     width: 180%;
     margin-left: 5%;
     transform: translate(-50%, -50%);
