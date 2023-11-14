@@ -30,7 +30,7 @@ const Header = () => {
       
         <Card.Text >
           <p style={{textAlign:'center', color:'white', fontSize:'large', margin:'20px'}}>
-        Software engineer with years of experience in rapidly changing environments. Passionate about design, art, rock climbing, climate activism, and equal outdoor access. 
+        Hard worker with years of experience in rapidly changing environments. Passionate about design, art, rock climbing, climate activism, and equal outdoor access. 
         </p>
         
         <p style={{textAlign:'center', color:'white', fontSize:'large', margin:'20px'}}>
