@@ -12,7 +12,8 @@ image: meImage,
 icons: false,
 iconImage: null,
 subtext: 'see full about me page here.',
-link: '/about'
+link: '/about',
+aspectRatio:'9/16'
 };
 
 export default bioData;

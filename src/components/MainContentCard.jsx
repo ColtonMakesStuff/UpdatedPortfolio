@@ -28,7 +28,7 @@ const MainContentCard = ({ data, direction }) => {
     <Row className="justify-content-center">
       <Col xs={8} style={{ maxWidth: '90vw' }}>
         <Card style={{ border: 'none', backgroundColor:'transparent', color:'white', justifyContent:'center' }}>
-        <Card.Img variant="top" style={{maxHeight:`${data.myMaxHeight}`, maxWidth:`${data.myMaxWidth}`}} src={data.image} />
+        <Card.Img variant="top" style={{width:'100%'}} src={data.image} />
           <Card.Body  >
             <FadeInSection>
                 <Card.Title><div style={{whiteSpace: 'pre-line'}}><h1>{data.title}</h1></div></Card.Title>
@@ -51,10 +51,11 @@ const MainContentCard = ({ data, direction }) => {
   ) : direction === 'left' ? (
     <Container style={{ justifyContent: 'center', maxWidth: '80vw'}}>
     <Row style={{ justifyContent: 'space-around' }}>
-            <Col sm={5} md={5} className="d-flex align-items-stretch" style={{margin:'12px'}}>
+            <Col sm={6} md={6} className="d-flex align-items-stretch" >
       <div className="d-flex flex-column justify-content-between h-100">
         <div>
         <div style={{whiteSpace: 'pre-line'}}><h1>{data.title}</h1></div>
+       
         <Card.Text> <div style={{whiteSpace: 'pre-line'}}><p>{data.subTitle}</p></div></Card.Text>
         </div>
         <div>
@@ -77,7 +78,7 @@ const MainContentCard = ({ data, direction }) => {
           
     </Col>
     <Col sm={5} md={5} style={{ display:'flex', justifyContent: 'end'}}>
-    <Card.Img variant="top" style={{maxHeight:`${data.myMaxHeight}`, maxWidth:`${data.myMaxWidth}`}} src={data.image} />
+      <Card className='d-flex align-items-stretch' style={{backgroundColor:'transparent', border:'none'}}><Card.Img variant="top" style={{ width:'100%', borderRadius:'0'}} src={data.image} /></Card>
     </Col>
     </Row>
   </Container>
@@ -85,13 +86,14 @@ const MainContentCard = ({ data, direction }) => {
     <Container style={{ justifyContent: 'center', maxWidth: '80vw'}}>
 <Row style={{ justifyContent: 'space-around'}} >
       <Col sm={5} md={5} style={{ display:'flex', justifyContent: 'end'}} >
-      <Card.Img variant="top" style={{maxHeight:`${data.myMaxHeight}`, maxWidth:`${data.myMaxWidth}`}} src={data.image} />
+      <Card style={{backgroundColor:'transparent', border:'none'}}><Card.Img variant="top" style={{ width:'100%', borderRadius:'0'}} src={data.image} /></Card>
+     
       </Col>
-      <Col sm={5} md={5} className="d-flex align-items-stretch" style={{margin:'12px'}}>
+      <Col sm={6} md={6} className="d-flex align-items-stretch">
         <div className="d-flex flex-column justify-content-between h-100" >
           <div>
           <div style={{whiteSpace: 'pre-line'}}><h1>{data.title}</h1></div>
-          <Card.Text> <div style={{whiteSpace: 'pre-line'}}><p>{data.subTitle}</p></div></Card.Text>
+          <Card.Text> <div style={{whiteSpace: 'pre-line', }}><p>{data.subTitle}</p></div></Card.Text>
             
           </div>
           <div>
