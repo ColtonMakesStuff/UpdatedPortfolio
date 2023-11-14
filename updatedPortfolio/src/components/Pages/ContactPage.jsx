@@ -12,7 +12,6 @@ const LandingPage = () => {
   return (
 <>
 <div style={{backgroundColor:'grey', color: 'white'}}>
-<CustomNavbar />
 <Row style={{ justifyContent: 'center', marginBottom:'45px'}} >
    
           <Col  sm={8} className='text-center justify-content-center' style={{marginTop: '30px'}}> 

@@ -2,6 +2,7 @@
 import { Card, Col, Row } from 'react-bootstrap';
 import rocks from '../assets/images/rocks.png';
 import classes from './Header.module.css';
+import HorizontalDivider from './VisualEffectsComponents/DividerHorizontal';
 
 const Header = () => {
   return (
@@ -23,8 +24,10 @@ const Header = () => {
             
              
           </Row>
+        
           </Card.Title>
-        <Card.Img src={rocks} alt="Image" style={{maxWidth:'60vw'}}/>
+        <Card.Img  sm={5} src={rocks} alt="Image" style={{ borderTop:'2px solid white', borderBottom:'2px solid white', paddingBottom:'40px', paddingTop:'40px' ,borderRadius:'0'}}/>
+      
         <Card.Text >
           <p style={{textAlign:'center', color:'white', fontSize:'large', margin:'20px'}}>
         Software engineer with years of experience in rapidly changing environments. Passionate about design, art, rock climbing, climate activism, and equal outdoor access. 

@@ -43,13 +43,15 @@ window.addEventListener('resize', resizeGrid);
       <FadeInSection>
         <Card style={{  margin: '1rem', width:'100px', backgroundColor:'transparent', border: 'none'}}>
           <HoverElement description={item.description} content={ 
-                <>
-                  <Card.Img  className={`${classes.card_img}`}  variant="top" src={item.image} style={{width:'100px', height:'100px', margin:'none', borderRadius:'15px'}}/>
-                    
-                      <p style={{textAlign:'center', height:'20px', color:'white'}}> 
-                         {item.label} 
-                      </p>
-                </>
+                      <>
+                      <div style={{position:'relative', width:'100px', height:'100px', margin:'none', borderRadius:'15px'}}>
+                        <Card.Img  className={`${classes.card_img}`}  variant="top" src={item.image} />
+                        <Card.Img  className={`${classes.card_overlay_img}`}  variant="top" src={item.altImage} />
+                        </div>
+                            <p style={{textAlign:'center', height:'20px', color:'white'}}> 
+                               {item.label} 
+                            </p>
+                      </>
               } />
         </Card>
       </FadeInSection>

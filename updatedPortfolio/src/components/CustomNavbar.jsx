@@ -3,7 +3,6 @@ import { Navbar, Nav, Container, Row, Col, Button } from 'react-bootstrap';
 import logo from '../assets/images/logo.png';
 import { Link } from 'react-router-dom';
 import MyModal from './MyModal';
-import Resume from './SkillSetComponents/Resume';
 import DocPreview from './SkillSetComponents/DocPreview';
 import HorizontalDivider from './VisualEffectsComponents/DividerHorizontal';
 const CustomNavbar = () => {

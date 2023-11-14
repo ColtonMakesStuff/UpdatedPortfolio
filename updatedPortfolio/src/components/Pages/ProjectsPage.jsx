@@ -9,9 +9,10 @@ import ContactSection from '../ContactComponents/ContactSection';
 function ProjectsPage() {
   return (
     <div style={{backgroundColor:'grey', color: 'white'}}>
-    <CustomNavbar />
      <Row style={{ justifyContent: 'center' }}>
     <h1 style={{textAlign:'center'}}>Projects</h1>
+    <DividerHorizontal />
+
     <MainContentCard data={projectCards[1]} direction={'left'}/>
     <DividerHorizontal />
     <MainContentCard data={projectCards[0]} direction={'left'}/>

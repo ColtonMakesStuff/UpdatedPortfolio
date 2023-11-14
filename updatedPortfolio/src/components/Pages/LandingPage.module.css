@@ -1,0 +1,13 @@
+.seeAll:hover{
+    cursor: pointer;
+    background-color: rgb(162, 143, 172);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+}
+.seeAll:active{
+    background-color: rgb(103, 85, 113);
+    background-color: rgb(50, 50, 50);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
