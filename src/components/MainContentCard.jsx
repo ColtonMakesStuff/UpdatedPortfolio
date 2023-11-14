@@ -36,8 +36,8 @@ const MainContentCard = ({ data, direction }) => {
                 <Card.Text> <div style={{whiteSpace: 'pre-line'}}>{(data.text)}</div></Card.Text>
                 {data.icons
                   ? 
-                  <a href={data.iconLink}  style={{marginRight:'12px'}}>
-                      <img src={data.iconImage} alt="Icon" width="20" height="20"/>
+                  <a href={data.iconLink} target="_blank" style={{marginRight:'12px'}}>
+                      <img src={data.iconImage} target="_blank" alt="Icon" width="20" height="20"/>
                   </a>
                   :
                   null
@@ -65,20 +65,20 @@ const MainContentCard = ({ data, direction }) => {
             <div style={{display:'flex'}}>
               {data.icons
               ? 
-              <a href={data.iconLink}  style={{marginRight:'12px'}}>
+              <a href={data.iconLink} target="_blank" style={{marginRight:'12px'}}>
                   <img src={data.iconImage} alt="Icon" width="20" height="20"/>
               </a>
               :
               null
               }
-             <Card.Link style={{color:'white'}} href={data.link}>{data.subtext}</Card.Link>
+             <Card.Link style={{color:'white'}} target="_blank" href={data.link}>{data.subtext}</Card.Link>
             </div>
           </div>
           </div>
           
     </Col>
     <Col sm={5} md={5} style={{ display:'flex', justifyContent: 'end'}}>
-      <Card className='d-flex align-items-stretch' style={{backgroundColor:'transparent', border:'none'}}><Card.Img variant="top" style={{ width:'100%', borderRadius:'0'}} src={data.image} /></Card>
+      <Card className='d-flex align-items-stretch' style={{backgroundColor:'transparent', border:'none'}}><Card.Img variant="top" style={{maxWidth:`${data.myMaxWidth}`, width:'100%', borderRadius:'0'}} src={data.image} /></Card>
     </Col>
     </Row>
   </Container>
@@ -86,7 +86,7 @@ const MainContentCard = ({ data, direction }) => {
     <Container style={{ justifyContent: 'center', maxWidth: '80vw'}}>
 <Row style={{ justifyContent: 'space-around'}} >
       <Col sm={5} md={5} style={{ display:'flex', justifyContent: 'end'}} >
-      <Card style={{backgroundColor:'transparent', border:'none'}}><Card.Img variant="top" style={{ width:'100%', borderRadius:'0'}} src={data.image} /></Card>
+      <Card className='d-flex align-items-stretch' style={{backgroundColor:'transparent', border:'none'}}><Card.Img variant="top" style={{maxWidth:`${data.myMaxWidth}`, width:'100%', borderRadius:'0'}} src={data.image} /></Card>
      
       </Col>
       <Col sm={6} md={6} className="d-flex align-items-stretch">
@@ -103,13 +103,13 @@ const MainContentCard = ({ data, direction }) => {
             <div style={{display:'flex'}}>
               {data.icons
               ? 
-                <a href={data.iconLink}  style={{marginRight:'12px'}}>
+                <a href={data.iconLink} target="_blank" style={{marginRight:'12px'}}>
                     <img src={data.iconImage} alt="Icon" width="20" height="20"/>
                 </a>
               :
               null
               }
-             <Card.Link style={{color:'white'}} href={data.link}>{data.subtext}</Card.Link>
+             <Card.Link style={{color:'white'}} target="_blank" href={data.link}>{data.subtext}</Card.Link>
             </div>
           </div>
         </div>

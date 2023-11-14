@@ -15,10 +15,9 @@ const projectCards = [
     image: platformScreenshot,
     icons: true,
     iconImage: gitLogo,
-    iconLink: null,
-    subtext: 'placeholder.',
-    link: 'fakelink1.fib',
-    aspectRatio:'3/4'
+    iconLink: 'https://github.com/ColtonMakesStuff/platformer',
+    subtext: null,
+    link: null,
   },
   {
     title: 'Tafl Multiplayer Game',
@@ -28,10 +27,9 @@ const projectCards = [
     image: taflScreenshot,
     icons: true,
     iconImage: gitLogo,
-    iconLink: 'fakelink3.fib',
-    subtext: 'placeholder.',
-    link: 'fakelink2.fib',
-    aspectRatio:'3/4'
+    iconLink: 'https://github.com/ColtonMakesStuff/toff-leo/blob/main/README.md',
+    subtext: null,
+    link: null,
   },
   {
     title: 'Weather Dashboard',
@@ -39,10 +37,9 @@ const projectCards = [
     image: weatherScreenshot,
     icons: true,
     iconImage: gitLogo,
-    iconLink: null,
-    subtext: 'placeholder.',
-    link: 'fakelink3.fib',
-    aspectRatio:'3/4'
+    iconLink: 'https://github.com/ColtonMakesStuff/weatherApp/blob/main/assets/README.md',
+    subtext: 'weather dashboard.',
+    link: 'https://coltonmakesstuff.github.io/weatherApp/',
   },
   {
     title: 'Simple Text Editor',
@@ -50,9 +47,9 @@ const projectCards = [
     image: jateScreenshot,
     icons: true,
     iconImage: gitLogo,
-    iconLink: null,
-    subtext: 'placeholder.',
-    link: 'fakelink3.fib',
+    iconLink: 'https://github.com/ColtonMakesStuff/PWA-text-editor',
+    subtext: 'JATE',
+    link: 'https://colton-text-editor-d34550b80c1a.herokuapp.com',
     aspectRatio:'3/4'
   },
   {
@@ -61,10 +58,9 @@ const projectCards = [
     image: todoScreenshot,
     icons: true,
     iconImage: gitLogo,
-    iconLink: null,
-    subtext: 'placeholder.',
-    link: 'fakelink3.fib',
-    aspectRatio:'3/4'
+    iconLink: `https://github.com/ColtonMakesStuff/DayPlanner`,
+    subtext: 'Dayplanner',
+    link: 'https://coltonmakesstuff.github.io/DayPlanner/',
   },
   {
     title: 'Quiz Game Site',
@@ -72,10 +68,9 @@ const projectCards = [
     image: quizScreenshot,
     icons: true,
     iconImage: gitLogo,
-    iconLink: null,
-    subtext: 'placeholder.',
-    link: 'fakelink3.fib',
-    aspectRatio:'3/4'
+    iconLink: `https://github.com/ColtonMakesStuff/StudyGame`,
+    subtext: 'Study Games.',
+    link: 'https://coltonmakesstuff.github.io/StudyGame/index.html',
   },
 
   // Add more project card objects here

@@ -13,14 +13,14 @@ text: `- fast learner
 - attentive to detail
 - strategic thinker
 - abitious
-- determined`,
+- determined`
+,
 image: art,
 icons: false,
 iconImage: null,
 subtext: ``,
 link: ``,
-myMaxHeight: `540px`,
-myMaxWidth: `400px`
+myMaxWidth: `300px`
 };
 
 export default StrengthsData;
