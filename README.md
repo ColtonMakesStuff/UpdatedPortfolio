@@ -1,8 +1,27 @@
-# React + Vite
+# React-Portfolio-drawlin22
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Description
+This project involved crafting an upgraded portfolio using React technology. The single-page application incorporates components for About Me, Portfolio, Contact, and Resume sections. The application has a cohesive structure.the site provides links to my GitHub and LinkedIn profiles.
 
-Currently, two official plugins are available:
+# Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+# Installation
+
+To install, clone the repository. Run Node command npm i to install dependencies. Run npm run dev to view the dev build
+
+
+# Usage
+![Portfolio Page]((/src/assets/images/siteScreenshot.png))
+
+Link to deployed application: https://coltonmakesstuff-portfolio.netlify.app
+
+# Credits
+Peer Colaboration:
+
+Chelsea Wagner: https://github.com/caf62219 - starting code and general setup
+Kyle Jocoy: https://github.com/Kylyote/ - starting code and general setup
+Donnie Rowlings - https://github.com/drawlin22 - starting code and general setup

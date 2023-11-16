@@ -19,7 +19,16 @@ const LandingPage = () => {
           <h1>ColtonMakesStuff</h1>
           <DividerHorizontal />
             <h2 style={{marginTop:'30px'}}>Get in touch</h2>
-            <Row ><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolor ea error! Earum nihil, laborum tenetur laudantium quidem molestias cumque delectus! Repellendus neque sunt eligendi deleniti, cupiditate sed unde ducimus consequatur. Commodi consectetur, inventore vero ab enim tenetur aperiam impedit asperiores, aliquid placeat aspernatur velit iure porro unde eaque non fugit ex nisi assumenda nostrum, temporibus vitae? Reprehenderit est tempore sunt quis, laborum eos fuga voluptates?</p></Row>
+            <Row ><p><div style={{whiteSpace: 'pre-line'}}>
+{`I'm always interested in hearing about new opportunities. The best way to reach me is by email. I also check my LinkedIn regularly, so feel free to connect with me there as well.
+
+ I typically respond to all inquiries within 48 hours.
+
+ I look forward to connecting with you soon!
+`}
+            
+</div>
+</p></Row>
           <DividerHorizontal />
 
           </Col>
