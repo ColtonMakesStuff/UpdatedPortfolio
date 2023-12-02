@@ -5,21 +5,21 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
-import docImageTest from '../../assets/images/resume-stand-in.png';
+import resumeImage from '../../assets/images/Colton-Firestone-Resume.png';
 import MyModal from '../MyModal';
 import { useState } from 'react';
 import classes from './DocPreview.module.css';
 import { MagnifyingGlassPlus } from "@phosphor-icons/react";
 import FadeInSection from '../VisualEffectsComponents/FadeIn';
-
+import resumePDF from '../../assets/Colton-Firestone-Software-Developer.pdf';
 const DocPreview = ({  }) => {
 
 const docData = {
     title: "Resume",
     description: "Thank you for your interest! Download my resume here to see a detailed overview of my qualifications. For more information or references, please don't hesitate to reach out.",
     content: "<p>Content</p>",
-    pdf: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    docImage: docImageTest,
+    pdf: resumePDF,
+    docImage: resumeImage,
 
 
 }
@@ -66,7 +66,7 @@ const toggleOverlayHandler = () => {
                     
                     <p>{docData.description}</p></div>
                     <div> 
-                    <a href="/path/to/resume.pdf" download>
+                    <a href={docData.pdf} download>
                         <button className={`${classes.download_button}`} size="lg">
                             Download Resume
                         </button>

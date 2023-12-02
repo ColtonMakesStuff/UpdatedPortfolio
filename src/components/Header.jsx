@@ -4,6 +4,7 @@ import rocks from '../assets/images/rocks.png';
 import classes from './Header.module.css';
 import HorizontalDivider from './VisualEffectsComponents/DividerHorizontal';
 
+
 const Header = () => {
   return (
     <Row style={{ justifyContent: 'center', }}>

@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 import MyModal from './MyModal';
 import DocPreview from './SkillSetComponents/DocPreview';
 import HorizontalDivider from './VisualEffectsComponents/DividerHorizontal';
+import resumePDF from '../assets/Colton-Firestone-Software-Developer.pdf';
+
+let pdf = resumePDF
 const CustomNavbar = () => {
 
   return (
@@ -30,7 +33,7 @@ const CustomNavbar = () => {
             <Link to="/skillset" className="nav-link">Skill Set</Link>
             <Link to="/about" className="nav-link">About Me</Link>
             </Nav>
-            <Button variant="outline-light" size="lg" href="/path/to/resume.pdf" download>
+            <Button variant="outline-light" size="lg" href={pdf} download>
                             Download Resume
             </Button>
                 

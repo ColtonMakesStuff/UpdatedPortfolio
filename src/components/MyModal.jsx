@@ -19,7 +19,6 @@ function MyModal({content, modalHandeler, modalSize, modalStyles}) {
 
       <Modal size={modalSize}  show={showModal} onHide={handleCloseModal} style={modalStyles}>
         <div style={{backgroundColor:'grey', color:'white', border:'30px solid grey', borderRadius:'6px', justifySelf:'center' }}> {content}</div>
-     
       </Modal>
     </div>
   );
