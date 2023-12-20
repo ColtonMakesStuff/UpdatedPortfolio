@@ -4,7 +4,7 @@ import weatherScreenshot from '../images/weatherScreenshot.png';
 import jateScreenshot from '../images/jateScreenshot.png';
 import todoScreenshot from '../images/todoScreenshot.png';
 import quizScreenshot from '../images/quizScreenshot.png';
-import presentScreenshot from '../images/presentScreenshot.png';
+import presentAppScreenshot from '../images/presentScreenshot.png';
 import gitLogo from '../images/tech-logos/github.png';
 
 const projectCards = [
@@ -76,7 +76,7 @@ const projectCards = [
   {
     title: 'Present Social Media App',
     text: ` Present is a photo centric social media application optimized for mobile devices that allows users to post photos with captions describing them, and like other posts and follow other users.`,
-    image: presentScreenshot,
+    image: presentAppScreenshot,
     icons: true,
     iconImage: gitLogo,
     iconLink: `https://github.com/ColtonMakesStuff/Present`,
