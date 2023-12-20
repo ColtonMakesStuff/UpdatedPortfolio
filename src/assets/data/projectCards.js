@@ -4,7 +4,7 @@ import weatherScreenshot from '../images/weatherScreenshot.png';
 import jateScreenshot from '../images/jateScreenshot.png';
 import todoScreenshot from '../images/todoScreenshot.png';
 import quizScreenshot from '../images/quizScreenshot.png';
-import presentScreenshot from '../images/presentScreenshot.png';
+import presentScreenshot from '../images/presentAppScreenshot.png';
 import gitLogo from '../images/tech-logos/github.png';
 
 const projectCards = [
@@ -80,7 +80,7 @@ const projectCards = [
     icons: true,
     iconImage: gitLogo,
     iconLink: `https://github.com/ColtonMakesStuff/Present`,
-  },
+  }
 
   // Add more project card objects here
 ];
