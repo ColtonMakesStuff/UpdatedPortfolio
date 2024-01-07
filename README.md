@@ -1,4 +1,4 @@
-# React-Portfolio-drawlin22
+# React-Portfolio
 
 # Description
 This project involved crafting an upgraded portfolio using React technology. The single-page application incorporates components for About Me, Portfolio, Contact, and Resume sections. The application has a cohesive structure.the site provides links to my GitHub and LinkedIn profiles.
