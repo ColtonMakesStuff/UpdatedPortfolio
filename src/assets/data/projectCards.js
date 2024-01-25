@@ -39,7 +39,7 @@ const projectCards = [
     image: AIMazeScreenShot,
     icons: true,
     iconImage: gitLogo,
-    iconLink: 'https://github.com/ColtonMakesStuff/weatherApp/blob/main/assets/README.md',
+    iconLink: 'https://github.com/ColtonMakesStuff/q_learning_maze',
     subtext: 'AI Maze.',
     link: 'https://machinelearningmaze.netlify.app',
   },
