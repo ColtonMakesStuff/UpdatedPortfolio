@@ -11,7 +11,7 @@ import { useState } from 'react';
 import classes from './DocPreview.module.css';
 import { MagnifyingGlassPlus } from "@phosphor-icons/react";
 import FadeInSection from '../VisualEffectsComponents/FadeIn';
-import resumePDF from '../../assets/Colton-Firestone-Software-Developer.pdf';
+import resumePDF from '../../assets/ColtonDevResume.pdf';
 const DocPreview = ({  }) => {
 
 const docData = {

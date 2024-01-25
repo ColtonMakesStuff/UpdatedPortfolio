@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import MyModal from './MyModal';
 import DocPreview from './SkillSetComponents/DocPreview';
 import HorizontalDivider from './VisualEffectsComponents/DividerHorizontal';
-import resumePDF from '../assets/Colton-Firestone-Software-Developer.pdf';
+import resumePDF from '../assets/ColtonDevResume.pdf';
 
 let pdf = resumePDF
 const CustomNavbar = () => {
