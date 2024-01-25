@@ -6,6 +6,7 @@ import todoScreenshot from '../images/todoScreenshot.png';
 import quizScreenshot from '../images/quizScreenshot.png';
 import presentScreenshot from '../images/presentAppScreenshot.png';
 import gitLogo from '../images/tech-logos/github.png';
+import AIMazeScreenShot from '../images/AIMazeScreenShot.png';
 
 const projectCards = [
   {
@@ -31,6 +32,16 @@ const projectCards = [
     iconLink: 'https://github.com/ColtonMakesStuff/toff-leo/blob/main/README.md',
     subtext: null,
     link: null,
+  },
+  {
+    title: 'Machine Learning Maze',
+    text: `A maze and machine learning algorithm made from scratch in JS using a SARSA learning algorithm.`,
+    image: AIMazeScreenShot,
+    icons: true,
+    iconImage: gitLogo,
+    iconLink: 'https://github.com/ColtonMakesStuff/weatherApp/blob/main/assets/README.md',
+    subtext: 'AI Maze.',
+    link: 'https://machinelearningmaze.netlify.app',
   },
   {
     title: 'Weather Dashboard',
