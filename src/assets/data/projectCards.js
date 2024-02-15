@@ -7,8 +7,19 @@ import quizScreenshot from '../images/quizScreenshot.png';
 import presentScreenshot from '../images/presentAppScreenshot.png';
 import gitLogo from '../images/tech-logos/github.png';
 import AIMazeScreenShot from '../images/AIMazeScreenShot.png';
+import CalenderScreenshot from '../images/CalenderScreenshot.png';
 
 const projectCards = [
+  {
+    title: 'Planner/Calender App',
+    text: `This project is a personal planner application inspired by the Moleskine notebook/planner aesthetic, designed for mobile devices. It uses a MongoDB database and a Node.js server with a custom API to manage user data, events, and retrieve information for specific dates.`,
+    image: CalenderScreenshot,
+    icons: true,
+    iconImage: gitLogo,
+    iconLink: 'https://github.com/ColtonMakesStuff/planner_calender/blob/main/README.md',
+    subtext: null,
+    link: null,
+  },
   {
     title: 'Platformer Game',
     text: `this is a platformer game that has enemies, things to collect and lots of game physics. to interact with.
