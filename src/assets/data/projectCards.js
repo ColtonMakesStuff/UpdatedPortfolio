@@ -75,16 +75,7 @@ const projectCards = [
     link: 'https://colton-text-editor-d34550b80c1a.herokuapp.com',
     aspectRatio:'3/4'
   },
-  {
-    title: 'Todo List',
-    text: ` just a simple todo list that allows users to add and remove items from a list. it uses local storage to save the list so it will be there when you come back.`,
-    image: todoScreenshot,
-    icons: true,
-    iconImage: gitLogo,
-    iconLink: `https://github.com/ColtonMakesStuff/DayPlanner`,
-    subtext: 'Dayplanner',
-    link: 'https://coltonmakesstuff.github.io/DayPlanner/',
-  },
+  
   {
     title: 'Quiz Game Site',
     text: `this is a quiz game site that allows users to play a quiz game. It has multiple quizzes and tracks time and scores.`,

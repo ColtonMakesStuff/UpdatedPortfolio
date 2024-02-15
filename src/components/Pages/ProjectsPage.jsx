@@ -26,8 +26,7 @@ function ProjectsPage() {
     <MainContentCard data={projectCards[4]} direction={'left'}/>
     <DividerHorizontal />
     <MainContentCard data={projectCards[5]} direction={'left'}/>
-    <DividerHorizontal />
-    <MainContentCard data={projectCards[7]} direction={'left'}/>
+   
     </Row>
     <ContactSection />
     </div>
