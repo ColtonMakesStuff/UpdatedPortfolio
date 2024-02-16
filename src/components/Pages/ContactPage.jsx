@@ -8,10 +8,12 @@ import { Col } from 'react-bootstrap';
 import CustomNavbar from '../CustomNavbar';
 import logo from '../../assets/images/logo.png';
 import ContactSectionLinks from '../ContactComponents/ContactSectionLinks';
-const LandingPage = () => {
+
+
+const ContactPage = () => {
   return (
-<>
-<div style={{backgroundColor:'grey', color: 'white'}}>
+
+<div className='w-100' style={{backgroundColor:'grey', color: 'white'}}>
 <Row style={{ justifyContent: 'center', marginBottom:'45px'}} >
    
           <Col  sm={8} className='text-center justify-content-center' style={{marginTop: '30px'}}> 
@@ -33,18 +35,19 @@ const LandingPage = () => {
 
           </Col>
         </Row>
-        <Row>
-
-        </Row>
+     
+        <div  style={{ width:'100vw'}}>
 <EmailForm />
+
 <Container className='justify-content-center' style={{ paddingTop:'29px' , maxWidth:'75vw'}}>
  <Row style={{borderTop:'2px solid White'}}> 
  <ContactSectionLinks/>
  </Row>
     </Container>
 </div>
-</>
+</div>
+
   );
 };
 
-export default LandingPage;
+export default ContactPage;
